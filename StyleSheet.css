@@ -1,0 +1,29 @@
+﻿﻿body {
+    background-color: black;
+    color: rgb(210, 128, 156);
+    padding: 20px 50px;
+    border: 2px solid salmon;
+    margin: 0;
+}
+
+h1 {
+    background-color: salmon;
+    color: black;
+    font-size: 4vw;
+}
+
+h2 {
+    padding: 5px 10px;
+    border: 2px solid salmon;
+    margin: 5;
+}
+
+.post {
+    padding: 5px 10px;
+    border: 2px solid salmon;
+    margin: 5;
+}
+
+html {
+    font-family: Aboreto;
+}
