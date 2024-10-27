@@ -1,15 +1,23 @@
-﻿﻿body {
+﻿.SiteHeader {
     background-color: black;
-    color: rgb(210, 128, 156);
-    padding: 20px 50px;
-    border: 2px solid salmon;
-    margin: 0;
+    position: sticky;
+    top: 0;
+    color: salmon;
+    font-size: 4vw;
+    z-index: var(--site-header-z-index);
+    width:100%;
 }
+
+body{
+    margin:0;
+}
+
 
 h1 {
     background-color: salmon;
     color: black;
     font-size: 4vw;
+    margin:0;
 }
 
 h2 {
@@ -26,4 +34,8 @@ h2 {
 
 html {
     font-family: Aboreto;
+    background-color: white;
+    color: rgb(210, 128, 156);
+    padding: 0px 0px;
+    margin: 0;
 }
