@@ -3,7 +3,7 @@
     position: sticky;
     top: 0;
     color: salmon;
-    font-size: 4vw;
+    font-size: 2vw;
     z-index: var(--site-header-z-index);
     width:100%;
 }
@@ -12,6 +12,15 @@ body{
     margin:0;
 }
 
+.container{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.work{
+    margin:5px;
+}
 
 h1 {
     background-color: salmon;
@@ -23,19 +32,22 @@ h1 {
 h2 {
     padding: 5px 10px;
     border: 2px solid salmon;
-    margin: 5;
+    color: salmon;
+    background-color: black;
+    margin: 2%;
 }
 
 .post {
     padding: 5px 10px;
     border: 2px solid salmon;
-    margin: 5;
+    color: black;
+    background-color: white;
+    margin: 5%;
 }
 
 html {
     font-family: Aboreto;
-    background-color: white;
-    color: rgb(210, 128, 156);
     padding: 0px 0px;
+    background-color: black;
     margin: 0;
 }
