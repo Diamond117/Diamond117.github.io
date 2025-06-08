@@ -1,10 +1,17 @@
 <?php
     include 'config.php'; 
         
-    $conn = mysqli_connect("classmysql.engr.oregonstate.edu", "cs340_wolfemax", "3991", "cs340_wolfemax");
+    $conn = mysqli_connect("classmysql.engr.oregonstate.edu", "cs340_wolfemax", "3991", "Conversion");
     if (!$conn) {
         die('Could not connect: ' . mysqli_error());
     }
+    $result = mysqli_query($conn, "SHOW TABLES");
+	if (!$result) {
+		die("Query to show fields from table failed");
+	}
+	$num_row = mysqli_num_rows($result);	
+	
+	echo "<h1>My Database Select a Table:<h1>"; 
 
 // ---- Handle Button Action ----
 $action = $_POST['action'] ?? null;
